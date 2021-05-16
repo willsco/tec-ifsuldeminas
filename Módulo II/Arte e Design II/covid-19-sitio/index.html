@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
 
+<!-- Abre tag "head" para configurações e carregamento de arquivos -->
 <head>
+    <!-- Faz primeira conexão e fica na "escuta" para carregar arquivos estáticos do Google (opcional) -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Faz primeira conexão e fica na "escuta" para carregar arquivos -->
+    <!-- Carrega fonte diretamente do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Carrega fonte diretamente do Google Fonts-->
-    <link rel="icon" type="image/png" href="//ssl.gstatic.com/classroom/favicon.png" />
-    <!-- Adiciona ícone para aba do navegador-->
+    <!-- Exibe ícone para aba do navegador-->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <!-- Define diretriz para não haver cache na máquina do usuário (precisa ser compativel com o servidor)-->
     <meta http-equiv="cache-control" content="no-cache" />
-    <!-- Define diretriz para não haver cache (precisa ser compativel com o servidor)-->
-    <meta http-equiv="pragma" content="no-cache" /> <!-- Outra diretriz de cache -->
-    <meta charset="UTF-8"> <!-- Define a codificação da página -->
-    <title>COVID-19</title> <!-- Exibe o título na aba do navegador -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Tag exclusiva para Internet Explorer -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tag que define -->
+    <!-- Outra diretriz para evitar cache na máquina do usuário -->
+    <meta http-equiv="pragma" content="no-cache" />
+    <!-- Define a codificação da página -->
+    <meta charset="UTF-8">
+    <!-- Exibe o título na aba do navegador -->
+    <title>COVID-19</title>
+    <!-- Tag exclusiva para Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tag que define marcação inicial para responsividade do layout mediante "media queries"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Carrega o arquivo CSS customizado -->
     <link rel="stylesheet" type="text/css" media="screen, print" href="css\custom.css" />
+
+    <!-- Tag para entrada de CSS estático diretamente no corpo do arquivo (NÃO RECOMENDADO) -->
     <style>
         /* não é recomendado adicionar CSS ao corpo do HTML, porém há exceções*/
     </style>
-</head>
+</head> <!-- Fecha tag "head" -->
 
+<!-- Abre tag "body" onde vai o conteúdo do sítio -->
 <body>
-    <h1 class="font1">O texto de TESTE Aqui para H1.</h1>
+    <h1 class="font1">O texto de TESTE Aqui para H1 usando uma fonte do Google.</h1>
 
-    <h2 class="font2">Outro texto de TESTE Aqui para H2.</h2>
+    <h2 class="font2">Outro texto de TESTE Aqui para H2 usando uma fonte personalizada.</h2>
+    <p>Um texto de parágrafo para exibir como é o texto usando a fonte padrão definida no CSS com o "*".</p>
+    <!-- Coloca uma imagem com classe para adaptar ao tamanho máximo do conteiner (classe "imagem" definida no arquivo CSS) -->
+    <img class="imagem" src="img/imagem-teste.jpg"/>
 
-
-    <script src="js\custom.js"></script>
+    <!-- Carrega o arquivo JS customizado (Rogério ainda não ensinou)-->
+    <script src="js\custom.js"></script> 
 </body>
 
 </html>
